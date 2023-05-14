@@ -1,0 +1,361 @@
+.container {
+    padding: 0 0rem;
+  }
+  
+  .main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/public/pexels-todd-trapani-1420440.jpg);
+    background-size: cover; /* This property will make the image cover the full width of the webpage */
+    background-repeat: no-repeat; /* This property will prevent the image from repeating */
+    background-position: center center; /* This property will center the image horizontally and vertically */
+  }
+  
+  .footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .title a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .title a:hover,
+  .title a:focus,
+  .title a:active {
+    text-decoration: underline;
+  }
+  
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+  }
+  
+  .title,
+  .description {
+    text-align: center;
+  }
+  
+  .description {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+  
+  .code {
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+      Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 300px;
+  }
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+  
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .logo {
+    height: 1em;
+    margin-left: 0.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  
+  .repWrap{
+    /*width: 1024px;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+  }
+  .repDisplay{
+    flex: 1 1 30%; /*grow | shrink | basis */
+    min-height: 100px;
+    padding: 0 15px 20px 15px;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background: rgb(249, 250, 250 , 0.75);
+  }
+  .hmpgDiv > h1{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 4px 4px #000000;
+  }
+  .SearchForm{
+    text-align:center;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 4px 4px #000000;
+  }
+  .SearchForm > input {
+  
+    border-radius: 5px;
+    background: rgb(249, 250, 250 , 0.75);
+    border: 1px solid rgb(181, 189, 196);
+    font-size: 16px;
+    height: 52px;
+    width: 70%;
+    line-height: 24px;
+    padding: 7px 8px;
+    color: rgb(8, 9, 10);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .GlowingBtn{
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: rgba(41, 22, 22, 0.8);
+    opacity: 0.2;
+    perspective: 1em;
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 1em;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+  }
+  
+  .GlowingTxt {
+    float: left;
+    margin-right: -0.8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+  }
+  
+  
+  .FaultyLetter{
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+  }
+  
+  .GlowingBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+  }
+  
+  .GlowingBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+  }
+  
+  .GlowingBtn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .GlowingBtn:hover .GlowingTxt {
+    animation: none;
+  }
+  
+  .GlowingBtn:hover .FaultyLetter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .GlowingBtn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .GlowingBtn:hover:after {
+    opacity: 1;
+  }
+  
+  @keyframes faulty-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 0.1;
+    }
+    4% {
+      opacity: 0.5;
+    }
+    19% {
+      opacity: 0.5;
+    }
+    21% {
+      opacity: 0.1;
+    }
+    23% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.4;
+    }
+  
+    87% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+  
+    2% {
+      opacity: 1;
+    }
+  
+    8% {
+      opacity: 0.1;
+    }
+  
+    9% {
+      opacity: 1;
+    }
+  
+    12% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    30% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+    72% {
+      opacity: 0.2;
+    }
+  
+    77% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+  
+  @keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .GlowingBtn{
+      font-size: 1em;
+    }
+  }
