@@ -23,8 +23,8 @@ export default function SearchForm(){
     return(<div>
         <form onSubmit={handleForm} className={styles.SearchForm}>
             <input type="text" name="repName" required minLength={3} placeholder='Type name of the Repository'></input>
-            <button className={styles.GlowingBtn} type="submit">
-                  <span className={styles.GlowingTxt}>S<span className={styles.FaultyLetter}>E</span>AR<span className={styles.FaultyLetter}>C</span>H</span>
+            <button type='submit' className='text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow'>
+                Search
             </button>
             <div className="test">
                 <SaerchTable data={data}/>
